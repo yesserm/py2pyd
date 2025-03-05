@@ -1,0 +1,65 @@
+{
+    "author": "Yesser Miranda",
+    "description": "This module compiles from .py to .pyd",
+    "disclaimer": "THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.",
+    "version": "0.1",
+    "license": "MIT",
+    "homepage": "http://rocketbot.co/",
+    "linux": true,
+    "windows": true,
+    "mac": true,
+    "docker": true,
+    "name": "py2pyd",
+    "dependencies": {
+        "castj2py": "file:",
+        "py2pyd": "file:"
+    },
+    "title": {
+        "en": "Compiler py to pyd",
+        "es": "Convertir Python a pyd"
+    },
+    "icon": "data:image/png;base64,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",
+    "children": [
+        {
+            "en": {
+                "title": "Compiler py to pyd",
+                "description": "This module compiles from .py to .pyd",
+                "title_options": "",
+                "options": null
+            },
+            "es": {
+                "title": "Convertir py to Pyd",
+                "description": "Este modulo convierte bots python a .pyd",
+                "title_options": "",
+                "options": null
+            },
+            "form": {
+                "css": "modal-lg",
+                "inputs": [
+                    {
+                        "type": "input",
+                        "placeholder": "Bot Name",
+                        "title": {
+                            "es": "Insert bot name for example Dentegra",
+                            "en": "Ingrese el nombre del bot por ejemplo Dentegra"
+                        },
+                        "id": "inputBotName",
+                        "css": "col-md-10"
+                    }
+                ]
+            },
+            "video_youtube": "",
+            "icon": "data:image/png;base64,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",
+            "module": "py2pyd",
+            "module_name": "py2pyd",
+            "visible": true,
+            "options": false,
+            "father": "module",
+            "group": "scripts",
+            "linux": true,
+            "windows": true,
+            "mac": true,
+            "docker": true
+        }
+    ]
+}
