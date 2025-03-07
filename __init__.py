@@ -17,10 +17,9 @@ try:
 
     if module == "py2pyd":
         bot_name = GetParams("inputBotName")
- 
         ruta_bot_dir = os.path.join('C:\DentalRobot', 'parallel', 'bots', bot_name)  
         os.environ["ruta_bot"] = ruta_bot_dir
-        os.system(f"{os.getcwd()}\modules\py2pyd\libs\python\python.exe modules/py2pyd/src/compiler.py build_ext --inplace --build-lib {ruta_bot_dir}")
+        os.system(f"{os.getcwd()}\modules\py2pyd\libs\python\python.exe modules/py2pyd/src/compiler.py build_ext --compiler=mingw32 --inplace")
         
 
 except Exception as e:
